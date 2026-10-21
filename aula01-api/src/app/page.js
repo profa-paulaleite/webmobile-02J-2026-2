@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import styles from "./page.module.css";
 import { useEffect, useState } from "react";
 
@@ -22,6 +23,8 @@ export default function Home() {
   return (
     <main>
       <h1> Casas do HP </h1>
+
+      <Link href="/server-side"> Server-Side Rendering </Link>
 
       {houses.map((house) => (
         <article key={house.id}>
